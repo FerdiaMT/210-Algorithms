@@ -1,18 +1,7 @@
 import java.util.Scanner;
  
 class Lab1_luhnsAlgorithm {
-     public static void main (String[] args){
-    	Scanner sc = new Scanner(System.in);
-    	String input = sc.nextLine();
-    	sc.close();
-        if ((luhnCheck(input)%10) == 0 && input.length()>=4 && input.length() <=30){
-            System.out.println("VALID");
-        }
-        else {
-            System.out.println("NOT VALID");
-        }
-     
-    }
+
     static int luhnCheck(String input){     
         int finalSum = 0;
         boolean second = false;
@@ -37,4 +26,30 @@ class Lab1_luhnsAlgorithm {
         }
         return (finalSum);
     }
+    
+    public static void lab1Main(){
+   	Scanner sc = new Scanner(System.in);
+   	String input = sc.nextLine();
+   	sc.close();
+       if ((luhnCheck(input)%10) == 0 && input.length()>=4 && input.length() <=30){
+           System.out.println("VALID");
+       }
+       else {
+           System.out.println("NOT VALID");
+       }
+   }
+    
+    
+//    public static void main (String[] args){
+//   	Scanner sc = new Scanner(System.in);
+//   	String input = sc.nextLine();
+//   	sc.close();
+//       if ((luhnCheck(input)%10) == 0 && input.length()>=4 && input.length() <=30){
+//           System.out.println("VALID");
+//       }
+//       else {
+//           System.out.println("NOT VALID");
+//       }
+//   }
+    
 }

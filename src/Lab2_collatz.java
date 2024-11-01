@@ -17,12 +17,20 @@ public class Lab2_collatz {
 		System.out.println(input);
 		System.out.println("number of steps was " + steps);
 	}
-
-public static void main(String args[]) {
-	Scanner scanner = new Scanner(System.in);
-	System.out.println("input an integer");
-	int input = scanner.nextInt();
+	
+	public static void lab2Main() {
+		Scanner scanner = new Scanner(System.in);
+		System.out.println("input an integer");
+		int input = scanner.nextInt();
 	
 		collatz(input);
 	}
+
+//	public static void main(String args[]) {
+//		Scanner scanner = new Scanner(System.in);
+//		System.out.println("input an integer");
+//		int input = scanner.nextInt();
+//	
+//		collatz(input);
+//	}
 }
