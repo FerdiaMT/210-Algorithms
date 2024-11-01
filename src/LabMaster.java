@@ -28,7 +28,7 @@ public class LabMaster {
 		System.out.println("\n- - - - - - - - - - - - -  \n");
 		System.out.println("Input just the number");
 	}
-	
+	//--
 	public static int takeInput() {
 		//user must not input 0, 4+, or a string
 		boolean run = false;
