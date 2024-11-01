@@ -1,5 +1,5 @@
 import java.util.Scanner;
-public class Lab2_Collatz {
+public class Lab2_collatz {
 	
 	private static void collatz(int input) {
 		int steps = 0;
