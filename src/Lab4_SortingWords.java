@@ -4,20 +4,11 @@ public class Lab4_SortingWords {
 	
 	public static void main(String args[]) {
 		
-		Scanner sc = new Scanner(System.in);
-		int nLength = sc.nextInt();
-		sc.nextLine();//needed since java takes enter key as string 1 otherwise
+		String arr[] = takeInput(); // fill up the array with inputs
 		
-		String arr[] = new String[nLength];
-		for(int i = 0; i <nLength; i++) {
-			arr[i] = sc.nextLine();
-		}
+		stringOrganizer(arr);//sort the array by length and alphabetical
 		
-		stringOrganizer(arr);
-		
-		for(int i = 0; i <arr.length; i++) {
-			System.out.println(arr[i]);
-		}
+		printArray(arr);//print the sorted array
 		
 	}
 
@@ -35,7 +26,6 @@ public class Lab4_SortingWords {
 				}
 			}
 		}
-		
 		return(arr);
 	}
 	
@@ -69,7 +59,25 @@ public class Lab4_SortingWords {
 		arr[j] = buffer;
 		return(arr);
 	}
+	
 
+	private static String[] takeInput() {
+		Scanner sc = new Scanner(System.in);
+		int nLength = sc.nextInt();
+		sc.nextLine();//needed since java takes enter key as string 1 otherwise
+		
+		String arr[] = new String[nLength];
+		for(int i = 0; i <nLength; i++) {
+			arr[i] = sc.nextLine();
+		}
+		return arr;
+	}
+	
+	private static void printArray(String[] arr) {
+		for(int i = 0; i <arr.length; i++) {
+			System.out.println(arr[i]);
+		}
+	}
 
 	//GOAL OF PROGRAM
 	//1: SORT A LIST OF WORDS BY LENGTH OF THE WORD , SHORT WORDS COMING FIRST
