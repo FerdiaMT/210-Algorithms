@@ -1,3 +1,4 @@
+package labWorkNumbered;
 import java.util.Scanner;
  
 class Lab1_luhnsAlgorithm {

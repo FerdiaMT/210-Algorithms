@@ -1,3 +1,4 @@
+package labWorkNumbered;
 import java.util.Scanner;
 public class Lab4_SortingWords {
 
