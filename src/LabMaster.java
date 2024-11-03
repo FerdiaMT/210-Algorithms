@@ -8,9 +8,14 @@ public class LabMaster {
 			"nthPrime"
 	};
 	
+	//COMMENT THIS LINE OUT WHEN WORKING ON A NEW LAB QUESTION
+	//------------------------------------------------------------
 
-	public static void main(String[] args) {
-		
+	//public static void main(String[] args) {runProgram();}
+	
+	//------------------------------------------------------------
+	
+	public static void runProgram(){
 		printCode1();//prints the first block of code
 		
 		int input = takeInput(); // takes the input
