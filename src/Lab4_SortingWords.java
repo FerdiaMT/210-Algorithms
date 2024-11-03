@@ -29,7 +29,14 @@ public class Lab4_SortingWords {
 		return(arr);
 	}
 	
-
+	private static String[] swapValues(String[] arr, int i, int j) {
+		
+		String buffer = arr[i];
+		arr[i] = arr[j];
+		arr[j] = buffer;
+		return(arr);
+	}
+	
 
 	public static String[] sortAlphabetical(String[] arr, int i, int j) {
 		String A = arr[i].toLowerCase();
@@ -52,14 +59,11 @@ public class Lab4_SortingWords {
 		
 	}
 
-	private static String[] swapValues(String[] arr, int i, int j) {
-		
-		String buffer = arr[i];
-		arr[i] = arr[j];
-		arr[j] = buffer;
-		return(arr);
-	}
-	
+/*================================================/
+ * 
+ *  THIS IS JUST INPUT STUFF, IGNORE FOR SORTING
+ * 
+/================================================*/
 
 	private static String[] takeInput() {
 		Scanner sc = new Scanner(System.in);
