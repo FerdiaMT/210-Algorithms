@@ -1,7 +1,6 @@
 import java.util.Scanner;
 public class Lab4_SortingWords {
 
-	
 	public static void main(String args[]) {
 		
 		String arr[] = takeInput(); // fill up the array with inputs
@@ -37,7 +36,6 @@ public class Lab4_SortingWords {
 		return(arr);
 	}
 	
-
 	public static String[] sortAlphabetical(String[] arr, int i, int j) {
 		String A = arr[i].toLowerCase();
 		String B = arr[j].toLowerCase();
@@ -50,13 +48,9 @@ public class Lab4_SortingWords {
 				//System.out.println("Sucessful swap: "+k+" with: "+arr[i]+" and "+arr[j]+" Since " +asciiValueA +" is bigger than"+ asciiValueB);
 				swapValues(arr,i,j);
 				break;
-			} else if (asciiValueA < asciiValueB) {
-                break;
-            }
+			} else if (asciiValueA < asciiValueB) {break;}
 		}
-		
 		return(arr);
-		
 	}
 
 /*================================================/
@@ -82,17 +76,12 @@ public class Lab4_SortingWords {
 			System.out.println(arr[i]);
 		}
 	}
-
-	//GOAL OF PROGRAM
-	//1: SORT A LIST OF WORDS BY LENGTH OF THE WORD , SHORT WORDS COMING FIRST
-	//2: IF WORD IS THE SAME LENGTH , SORT THEM BY ALPHABETICAL ORDER
-	//MUST CREATE ONE METHOD THAT ISNT MAIN METHOD 
-	
-	//SO, SORT WORDS BY LENGTH (BUBBLE SORT FOR CONVENIENCE)
-	//RUN THROUGH AGAIN THIS TIME IF CHECKING IF N ==N+1.LENGTH , SORT ALPHABETICAL , DO THIS N-1 TIMES
-	
-	
-	
 }
 
+//GOAL OF PROGRAM
+//1: SORT A LIST OF WORDS BY LENGTH OF THE WORD , SHORT WORDS COMING FIRST
+//2: IF WORD IS THE SAME LENGTH , SORT THEM BY ALPHABETICAL ORDER
+//MUST CREATE ONE METHOD THAT ISNT MAIN METHOD 
 
+//SO, SORT WORDS BY LENGTH (BUBBLE SORT FOR CONVENIENCE)
+//RUN THROUGH AGAIN THIS TIME IF CHECKING IF N ==N+1.LENGTH , SORT ALPHABETICAL , DO THIS N-1 TIMES
