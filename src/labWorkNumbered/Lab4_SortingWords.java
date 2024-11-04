@@ -2,6 +2,14 @@ package labWorkNumbered;
 import java.util.Scanner;
 public class Lab4_SortingWords {
 
+//	public static void lab4Main() {
+//		String arr[] = takeInput(); // fill up the array with inputs
+//		
+//		stringOrganizer(arr);//sort the array by length and alphabetical
+//		
+//		printArray(arr);//print the sorted array
+//	}
+	
 	public static void main(String args[]) {
 		
 		String arr[] = takeInput(); // fill up the array with inputs
@@ -11,6 +19,8 @@ public class Lab4_SortingWords {
 		printArray(arr);//print the sorted array
 		
 	}
+	
+	
 
 	private static String[] stringOrganizer(String arr[]) {
 
@@ -54,11 +64,11 @@ public class Lab4_SortingWords {
 		return(arr);
 	}
 
-/*================================================/
+/*=================================================================================/
  * 
- *  THIS IS JUST INPUT STUFF, IGNORE FOR SORTING
+ * 					 THIS IS JUST INPUT STUFF, IGNORE FOR SORTING
  * 
-/================================================*/
+/=================================================================================*/
 
 	private static String[] takeInput() {
 		Scanner sc = new Scanner(System.in);

@@ -6,7 +6,8 @@ public class LabMaster {
 			"---------",
 			"Luhns Algorithm",
 			"Collatz Conjecture",
-			"nthPrime"
+			"nthPrime",
+			"sortingWords"
 	};
 	
 	//COMMENT THIS LINE OUT WHEN WORKING ON A NEW LAB QUESTION
@@ -47,7 +48,9 @@ public class LabMaster {
 			if(
 					inputString.equals("1")||
 					inputString.equals("2")||
-					inputString.equals("3")
+					inputString.equals("3")||
+					inputString.equals("4")
+
 			) {
 				run=true;
 				
@@ -68,9 +71,14 @@ public class LabMaster {
 
 		}else if(input==2) {
 			Lab2_collatz.lab2Main();
-
+			public static void lab4Main() {
+				// TODO Auto-generated method stub
+				
+			}
 		}else if(input==3) {
 			Lab3_nthPrime.lab3Main();
+		}else if (input==4) {
+			//Lab4_SortingWords.lab4Main();
 		}
 		
 	}
