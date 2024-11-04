@@ -71,10 +71,6 @@ public class LabMaster {
 
 		}else if(input==2) {
 			Lab2_collatz.lab2Main();
-			public static void lab4Main() {
-				// TODO Auto-generated method stub
-				
-			}
 		}else if(input==3) {
 			Lab3_nthPrime.lab3Main();
 		}else if (input==4) {
