@@ -29,5 +29,11 @@ public class Lab5_Stack {
 		return stackArray[top];
 	} 
 	
+	public boolean isEmpty() {
+
+		return (top == -1);
+	} 
+	
+	
 	
 }

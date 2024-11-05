@@ -7,14 +7,43 @@ public class Lab5_DirectionStack {
 		Scanner sc = new Scanner(System.in);
 		
 		Lab5_Stack stack = new Lab5_Stack(10); // initializes stack with size 10
-		String input = "";
-		do {
+		String input = sc.nextLine();
+		while(!input.equals("Arrived")){
+			
+			if(input.equals("Go Back")) {
+				stack.pop();
+			}else {
+				stack.push(input);
+			}
+			
 			input = sc.nextLine();
-			stack.push(input);
+
 		}
-		while(input !="Arrived");
 		
-		System.out.println("A");
+		while(!stack.isEmpty()) {
+			String output = stack.peek();
+			
+			switch(output) {
+				
+			case "Go North":
+				output = "Go South";
+				break;
+			case "Go South":
+				output = "Go North";
+				break;
+			case "Go East":
+				output = "Go West";
+				break;
+			case "Go West":
+				output = "Go East";
+				break;
+			default:
+				output = output+" was an input error";
+			}
+			
+			System.out.println(output);
+			stack.pop();
+		}
 		
 	}
 }
