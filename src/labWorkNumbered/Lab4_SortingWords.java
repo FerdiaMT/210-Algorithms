@@ -10,15 +10,15 @@ public class Lab4_SortingWords {
 //		printArray(arr);//print the sorted array
 //	}
 	
-	public static void main(String args[]) {
-		
-		String arr[] = takeInput(); // fill up the array with inputs
-		
-		stringOrganizer(arr);//sort the array by length and alphabetical
-		
-		printArray(arr);//print the sorted array
-		
-	}
+//	public static void main(String args[]) {
+//		
+//		String arr[] = takeInput(); // fill up the array with inputs
+//		
+//		stringOrganizer(arr);//sort the array by length and alphabetical
+//		
+//		printArray(arr);//print the sorted array
+//		
+//	}
 	
 	
 
