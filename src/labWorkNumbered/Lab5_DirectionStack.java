@@ -3,8 +3,18 @@ package labWorkNumbered;
 import java.util.Scanner;
 
 public class Lab5_DirectionStack {
+	
+//	public static void lab5Main() {
+//		run();
+//	}
+	
 	public static void main(String args[]) {
-		Scanner sc = new Scanner(System.in);
+		run();
+	}
+	
+	private static void run() {
+		// TODO Auto-generated method stub
+Scanner sc = new Scanner(System.in);
 		
 		Lab5_Stack stack = new Lab5_Stack(10); // initializes stack with size 10
 		String input = sc.nextLine();
@@ -44,8 +54,9 @@ public class Lab5_DirectionStack {
 			System.out.println(output);
 			stack.pop();
 		}
-		
 	}
+
+		
 }
 	
 	

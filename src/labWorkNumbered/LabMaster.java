@@ -7,7 +7,8 @@ public class LabMaster {
 			"Luhns Algorithm",
 			"Collatz Conjecture",
 			"nthPrime",
-			"sortingWords"
+			"sortingWords",
+			"DirectionStack"
 	};
 	
 	//COMMENT THIS LINE OUT WHEN WORKING ON A NEW LAB QUESTION
@@ -49,8 +50,8 @@ public class LabMaster {
 					inputString.equals("1")||
 					inputString.equals("2")||
 					inputString.equals("3")||
-					inputString.equals("4")
-
+					inputString.equals("4")||
+					inputString.equals("5")
 			) {
 				run=true;
 				
@@ -75,6 +76,8 @@ public class LabMaster {
 			Lab3_nthPrime.lab3Main();
 		}else if (input==4) {
 			//Lab4_SortingWords.lab4Main();
+		}else if(inout==5) {
+			Lab5_DirectionStak.lab5Main();
 		}
 		
 	}
