@@ -74,10 +74,10 @@ public class LabMaster {
 			Lab2_collatz.lab2Main();
 		}else if(input==3) {
 			Lab3_nthPrime.lab3Main();
-		}else if (input==4) {
+		}else if(input==4) {
 			//Lab4_SortingWords.lab4Main();
-		}else if(inout==5) {
-			Lab5_DirectionStak.lab5Main();
+		}else if(input==5) {
+			//Lab5_DirectionStack.lab5Main();
 		}
 		
 	}
