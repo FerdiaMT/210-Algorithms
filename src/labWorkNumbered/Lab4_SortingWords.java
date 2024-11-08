@@ -14,10 +14,10 @@ public class Lab4_SortingWords {
 		
 		String arr[] = takeInput(); // fill up the array with inputs
 		
-		stringOrganizer(arr);//sort the array by length and alphabetical
-		
-		printArray(arr);//print the sorted array
-		
+		stringOrganizerBackwards(arr);//sort the array by length and alphabetical
+		printArray(arr);
+		stringOrganizer(arr);
+		printArray(arr);//print the sorted array	
 	}
 	
 	
@@ -38,6 +38,24 @@ public class Lab4_SortingWords {
 		}
 		return(arr);
 	}
+	
+	private static String[] stringOrganizerBackwards(String arr[]) {
+
+		for(int i = 0 ; i <= arr.length-1 ; i++) { // say i is on index 3, j will be 4, 5,6 and 7
+			for(int j = i+1 ; j < arr.length;j++) {
+				
+				if( arr[i].length()< arr[j].length()) { // if A is bigger then B , we want B to be very left
+					swapValues(arr,i,j); //SWAP THIS TO REVERSE THE ORDER OF SWAPPING
+				}
+				
+				else if(arr[i].length() == arr[j].length()) { // if they are the same length, check who should be first alphabetically
+					sortAlphabetical(arr,i,j);
+				}
+			}
+		}
+		return(arr);
+	}
+	
 	
 	private static String[] swapValues(String[] arr, int i, int j) {
 		
