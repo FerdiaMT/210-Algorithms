@@ -8,9 +8,9 @@ public class Lab5_DirectionStack {
 //		run();
 //	}
 	
-	public static void main(String args[]) {
-		run();
-	}
+//	public static void main(String args[]) {
+//		run();
+//	}
 	
 	private static void run() {
 		// TODO Auto-generated method stub

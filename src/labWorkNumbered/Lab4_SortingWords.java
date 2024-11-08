@@ -10,15 +10,15 @@ public class Lab4_SortingWords {
 //		printArray(arr);//print the sorted array
 //	}
 	
-//	public static void main(String args[]) {
-//		
-//		String arr[] = takeInput(); // fill up the array with inputs
-//		
-//		stringOrganizer(arr);//sort the array by length and alphabetical
-//		
-//		printArray(arr);//print the sorted array
-//		
-//	}
+	public static void main(String args[]) {
+		
+		String arr[] = takeInput(); // fill up the array with inputs
+		
+		stringOrganizer(arr);//sort the array by length and alphabetical
+		
+		printArray(arr);//print the sorted array
+		
+	}
 	
 	
 
@@ -28,7 +28,7 @@ public class Lab4_SortingWords {
 			for(int j = i+1 ; j < arr.length;j++) {
 				
 				if( arr[i].length() > arr[j].length()) { // if A is bigger then B , we want B to be very left
-					swapValues(arr,i,j);
+					swapValues(arr,i,j); //SWAP THIS TO REVERSE THE ORDER OF SWAPPING
 				}
 				
 				else if(arr[i].length() == arr[j].length()) { // if they are the same length, check who should be first alphabetically
@@ -71,6 +71,7 @@ public class Lab4_SortingWords {
 /=================================================================================*/
 
 	private static String[] takeInput() {
+		System.out.println("Please give input");
 		Scanner sc = new Scanner(System.in);
 		int nLength = sc.nextInt();
 		sc.nextLine();//needed since java takes enter key as string 1 otherwise
