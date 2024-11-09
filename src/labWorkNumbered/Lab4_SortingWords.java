@@ -2,23 +2,26 @@ package labWorkNumbered;
 import java.util.Scanner;
 public class Lab4_SortingWords {
 
-//	public static void lab4Main() {
-//		String arr[] = takeInput(); // fill up the array with inputs
-//		
-//		stringOrganizer(arr);//sort the array by length and alphabetical
-//		
-//		printArray(arr);//print the sorted array
-//	}
-	
-	public static void main(String args[]) {
-		
+	public static void lab4Main() {
+
 		String arr[] = takeInput(); // fill up the array with inputs
 		
-		stringOrganizerBackwards(arr);//sort the array by length and alphabetical
-		printArray(arr);
-		stringOrganizer(arr);
-		printArray(arr);//print the sorted array	
+		stringOrganizerBackwards(arr);//sort the array by length and alphabetical,backwards first
+		printArray(arr); // print the array
+		stringOrganizer(arr); // resort the array, this time in not backwards
+		printArray(arr);//print the second array
+		
 	}
+	
+//	public static void main(String args[]) {
+//		
+//		String arr[] = takeInput(); // fill up the array with inputs
+//		
+//		stringOrganizerBackwards(arr);//sort the array by length and alphabetical
+//		printArray(arr);
+//		stringOrganizer(arr);
+//		printArray(arr);//print the sorted array	
+//	}
 	
 	
 

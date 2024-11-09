@@ -75,7 +75,7 @@ public class LabMaster {
 		}else if(input==3) {
 			Lab3_nthPrime.lab3Main();
 		}else if(input==4) {
-			//Lab4_SortingWords.lab4Main();
+			Lab4_SortingWords.lab4Main();
 		}else if(input==5) {
 			//Lab5_DirectionStack.lab5Main();
 		}
