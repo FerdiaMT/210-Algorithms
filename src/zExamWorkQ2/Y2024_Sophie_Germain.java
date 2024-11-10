@@ -1,9 +1,8 @@
 package zExamWorkQ2;
 
-import java.util.Iterator;
 import java.util.Scanner;
 
-public class SophieGermain_2024 {
+public class Y2024_Sophie_Germain {
 	
 	public static void main(String[] args) {
 		
