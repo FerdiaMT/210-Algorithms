@@ -8,6 +8,7 @@ public class Lab5_Stack {
 	 
 	 
 	public Lab5_Stack(int n) {
+		
 		maxSize = n; // set array size
 		stackArray = new String[maxSize]; // create array
 		top = -1; 
