@@ -19,8 +19,6 @@ public class Y2023_Prime_Distance {
 						dist*=-1;
 					}
 					distance = Math.min(distance, dist);
-					
-					
 				}
 			}
 		}
