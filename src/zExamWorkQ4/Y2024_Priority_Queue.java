@@ -7,4 +7,7 @@ public class Y2024_Priority_Queue {
 		
 		
 	}
+	
+	//need this for lab 6
+	//why isnt my latop code comitted ?
 }
