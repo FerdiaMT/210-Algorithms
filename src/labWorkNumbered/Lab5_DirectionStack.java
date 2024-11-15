@@ -8,31 +8,58 @@ public class Lab5_DirectionStack {
 //		run();
 //	}
 	
-//	public static void main(String args[]) {
-//		run();
-//	}
-	
-	private static void run() {
-		// TODO Auto-generated method stub
+public static void main(String args[]) {
+		
+		
 Scanner sc = new Scanner(System.in);
 		
+		
 		Lab5_Stack stack = new Lab5_Stack(10); // initializes stack with size 10
+		Lab5_Stack stack2 = new Lab5_Stack(10);
+		
+		Lab5_Stack stack3 = new Lab5_Stack(10); // initializes stack with size 10
+
+		
 		String input = sc.nextLine();
 		while(!input.equals("Arrived")){
 			
 			if(input.equals("Go Back")) {
 				stack.pop();
+				stack2.popFirst();
+				stack3.pop();
 			}else {
 				stack.push(input);
+				stack2.push(input);
+				stack3.push(input);
 			}
 			
 			input = sc.nextLine();
 
 		}
 		
+		boolean palindrome = true;
 		while(!stack.isEmpty()) {
-			String output = stack.peek();
-			
+			if(   !stack.peek().equals(stack2.peekFirst())) {
+				System.out.println("Instructions are not a palindrome");
+				System.out.println(stack.peek() +  " is not equal to " + stack.peekFirst());
+				palindrome = false;
+				break;
+			}else {
+				stack.pop();
+				stack2.popFirst();
+			}
+		}
+		
+		if(palindrome) {
+			System.out.println("The instructions are a palindrome");
+		}
+		
+		
+		
+		int counter = 0;
+		
+		while(!stack3.isEmpty()) {
+			String output = stack3.peek();
 			switch(output) {
 				
 			case "Go North":
@@ -50,14 +77,22 @@ Scanner sc = new Scanner(System.in);
 			default:
 				output = output+" was an input error";
 			}
-			
+
+
+			//stack1Output[counter] = output;
+			//counter++;
 			System.out.println(output);
-			stack.pop();
+			stack3.pop();
 		}
+		
 	}
+	
+}
+	
+		// TODO Auto-generated method stub
+		
 
 		
-}
 	
 	
 
