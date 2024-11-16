@@ -5,12 +5,20 @@ public class Lab6_Handler {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		System.out.println("Input the length of the queue");
-		int length = sc.nextInt();
+		//int length = sc.nextInt();
+		
+		int length = 6; //THIS IS JUST EXAMPLE CODE WHERE INPUT IS 6
+		
 		Lab6_PriorityQueue pq = new Lab6_PriorityQueue(length);
+		
+		
+		pq.insert(3);
+		pq.insert(8);
+		pq.insert(2);
+		pq.insert(9);
+		pq.remove();
 		pq.insert(5);
-		pq.insert(10);
-		pq.insert(20);
-		pq.insert(7);
+		pq.insert(3);
 		while(!pq.isEmpty()) {
 			System.out.println(pq.remove());
 		}
@@ -35,7 +43,14 @@ This class should contain:
 • An isFull method
 • A size method
 Sample input:
-5 8 1 5 7 3 Remove 2
+6
+3
+8
+2
+9
+REMOVE
+5
+3
 Sample Output:
-1 2 3 5 7
+3, 3, 5, 8, 9
 */
