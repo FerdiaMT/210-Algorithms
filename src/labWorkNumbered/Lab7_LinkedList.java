@@ -56,4 +56,17 @@ public class Lab7_LinkedList {
 			current = current.next;
 		}
 	}
+	
+	public void setFirstName(String name) {
+		first.name = name;
+	}
+	public void setFirstAge(int age) {
+		first.age = age;
+	}
+	public void setFirstDegree(String degree) {
+		first.degree = degree;
+	}
+	public void setFirstYearOfStudy(int yearOfStudy) {
+		first.yearOfStudy = yearOfStudy;
+	}
 }

@@ -17,9 +17,7 @@ public class Lab7_Link {
 	}
 	
 	public void displayLink() {
-		System.out.println(name);
-		System.out.println(age);
-		System.out.println(degree);
-		System.out.println(yearOfStudy);
+		System.out.println(name+','+age+','+degree+','+yearOfStudy);
+
 	}
 }
