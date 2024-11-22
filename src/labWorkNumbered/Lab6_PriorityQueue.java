@@ -74,6 +74,19 @@ public class Lab6_PriorityQueue {
 	     return nItems;
 	}
 	
+	public void printQueue() {
+		System.out.print("Queue: {");
+		
+		for(int i =0 ; i < nItems; i++) {
+			System.out.print(array[i]);
+			if(i != nItems-1) {
+				System.out.print(",");
+			}
+		}
+		System.out.println("} \n");
+	
+	}
+	
 
 	  
 }

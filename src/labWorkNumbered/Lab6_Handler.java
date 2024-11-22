@@ -5,22 +5,35 @@ public class Lab6_Handler {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		System.out.println("Input the length of the queue");
-		//int length = sc.nextInt();
-		
-		int length = 6; //THIS IS JUST EXAMPLE CODE WHERE INPUT IS 6
+		int length = sc.nextInt();
+		sc.nextLine();
 		
 		Lab6_PriorityQueue pq = new Lab6_PriorityQueue(length);
 		
+		System.out.println("Now taking input");
+		String input = sc.nextLine();
 		
-		pq.insert(3);
-		pq.insert(8);
-		pq.insert(2);
-		pq.insert(9);
-		pq.remove();
-		pq.insert(5);
-		pq.insert(3);
-		while(!pq.isEmpty()) {
-			System.out.println(pq.remove());
+		while(!input.equals("quit")) {
+			
+			modifyQueue(input, pq);
+			input = sc.nextLine();
+			
+		}
+	}
+
+	private static void modifyQueue(String input, Lab6_PriorityQueue pq) {
+		if(  (!input.equals("REMOVE") && !input.equals("PRINT") &&  pq.isFull())) {
+			System.out.println("QUEUE IS FULL, NOT TAKING INPUT");
+		}else {
+			if(input.equals("REMOVE")) {
+				pq.remove();
+			}
+			else if(input.equals("PRINT")) {
+				pq.printQueue();
+			}else {
+				pq.insert(Integer.parseInt(input));
+				System.out.println(input+" has been inputed");
+			}
 		}
 	}
 
