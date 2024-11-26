@@ -4,11 +4,14 @@ public class LabMaster {
 
 	public static String[] Names = {
 			"---------",
-			"Luhns Algorithm",
-			"Collatz Conjecture",
-			"nthPrime",
-			"sortingWords",
-			"DirectionStack"
+			"Luhns Algorithm",  		//W1
+			"Collatz Conjecture",		//W2
+			"nthPrime",					//W3
+			"sortingWords",				//W4
+			"DirectionStack",			//W5
+			"PriorityQueue"	,			//W6
+			"LinkedListW7",				//W7
+			"LinkedListw8"				//W8
 	};
 	
 	//COMMENT THIS LINE OUT WHEN WORKING ON A NEW LAB QUESTION
@@ -77,7 +80,13 @@ public class LabMaster {
 		}else if(input==4) {
 			Lab4_SortingWords.lab4Main();
 		}else if(input==5) {
-			//Lab5_DirectionStack.lab5Main();
+			Lab5_DirectionStack.lab5Main();
+		}else if(input==6) {
+			Lab6_Handler.lab6Main();
+		}else if(input==7) {
+			Lab7_Main.lab7Main();
+		}else if(input==8) {
+			Lab8_Main.lab8Main();
 		}
 		
 	}

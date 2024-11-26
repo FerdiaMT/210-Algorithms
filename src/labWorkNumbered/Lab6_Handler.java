@@ -1,6 +1,26 @@
 package labWorkNumbered;
 import java.util.Scanner;
 public class Lab6_Handler {
+	
+	
+	public static void lab6Main() {
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Input the length of the queue");
+		int length = sc.nextInt();
+		sc.nextLine();
+		
+		Lab6_PriorityQueue pq = new Lab6_PriorityQueue(length);
+		
+		System.out.println("Now taking input");
+		String input = sc.nextLine();
+		
+		while(!input.equals("quit")) {
+			
+			modifyQueue(input, pq);
+			input = sc.nextLine();
+			
+		}
+	}
 
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);

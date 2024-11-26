@@ -14,6 +14,5 @@ public class Lab8_Main {
 		ll.makeLoop(2,6);
 		
 		ll.navigateList(20);
-		
 	}
 }

@@ -3,6 +3,11 @@ package labWorkNumbered;
 import java.util.Scanner;
 
 public class Lab7_Main {
+	
+	public static void lab7Main() {
+		
+	}
+	
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		
