@@ -3,13 +3,13 @@ package labWorkNumbered;
 public class Lab7_Link {
 
 	public String name;
-	public int age;
+	public String age;
 	public String degree;
-	public int yearOfStudy;
+	public String yearOfStudy;
 	
 	public Lab7_Link next; // next is auto set to null 
 	
-	public Lab7_Link(String name, int age, String degree, int yearOfStudy) {
+	public Lab7_Link(String name, String age, String degree, String yearOfStudy) {
 		this.name = name;
 		this.age = age;
 		this.degree = degree;

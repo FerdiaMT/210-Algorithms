@@ -12,7 +12,7 @@ public class Lab7_LinkedList {
 		return (first==null);
 	}
 	
-	public void insertHead(String name, int age, String degree, int yearOfStudy) {
+	public void insertHead(String name, String age, String degree, String yearOfStudy) {
 		Lab7_Link newLink = new Lab7_Link( name,  age,  degree, yearOfStudy);
 		newLink.next = first;
 		first = newLink;
@@ -49,6 +49,10 @@ public class Lab7_LinkedList {
 		return current;
 	}
 	
+	
+	
+	
+	
 	public void display() {
 		Lab7_Link current = first;//create a copy of pointer
 		while(current!=null) {
@@ -60,13 +64,92 @@ public class Lab7_LinkedList {
 	public void setFirstName(String name) {
 		first.name = name;
 	}
-	public void setFirstAge(int age) {
+	public void setFirstAge(String age) {
 		first.age = age;
 	}
 	public void setFirstDegree(String degree) {
 		first.degree = degree;
 	}
-	public void setFirstYearOfStudy(int yearOfStudy) {
+	public void setFirstYearOfStudy(String yearOfStudy) {
 		first.yearOfStudy = yearOfStudy;
 	}
+	
+	public Lab7_Link search(String par , String key) {
+		Lab7_Link current = first;
+		Lab7_Link previous = first;
+		if(par.equals("Name")) {
+			return findName(current ,previous ,key);
+			
+		}else if(par.equals("Age")) {
+			return findAge(current ,previous ,key);
+			
+		}else if(par.equals("Degree")) {
+			return findDegree(current ,previous ,key);
+			
+		}else if(par.equals("YearOfStudy")) {
+			return findYearOfStudy(current ,previous ,key);
+			
+		}else {
+			return null;
+		}
+		
+	}
+	
+	public Lab7_Link findName(Lab7_Link current , Lab7_Link previous , String key) {
+		while(!current.name.equals(key) ) {
+			if(current.next ==null) {
+				return null;//end of list
+			}else {
+				previous = current;
+				current = current.next;
+			}
+		}	
+		return current;
+	}
+	
+	public Lab7_Link findAge(Lab7_Link current , Lab7_Link previous , String key) {
+		while(!current.age.equals(key)) {
+			if(current.next ==null) {
+				return null;//end of list
+			}else {
+				previous = current;
+				current = current.next;
+			}
+		}	
+		return current;
+	}
+	
+	public Lab7_Link findDegree(Lab7_Link current , Lab7_Link previous , String key) {
+		while(!current.degree.equals(key) ) {
+			if(current.next ==null) {
+				return null;//end of list
+			}else {
+				previous = current;
+				current = current.next;
+			}
+		}	
+		return current;
+	}
+	
+	public Lab7_Link findYearOfStudy(Lab7_Link current , Lab7_Link previous , String key) {
+		while(!current.yearOfStudy.equals(key) ) {
+			if(current.next ==null) {
+				return null;//end of list
+			}else {
+				previous = current;
+				current = current.next;
+			}
+		}	
+		return current;
+	}
+
+	public void deleteSelectedLink(Lab7_Link current) {
+		delete(current.name);
+	}
+	
+	
+	//so the first input is what category we are searching for
+	//, andthe second one is the key we are searching for 
+	// it will then print the linked list with that data
+	//
 }
