@@ -19,32 +19,6 @@ public class Lab7_Main {
 		
 		String input = sc.nextLine();
 		
-//		while(!input.equals("quit")) {
-//		
-//			if(input.equals("Name")) {
-//				linkedList.setFirstName(sc.nextLine());
-//			}
-//			if(input.equals("Age")) {
-//				linkedList.setFirstAge(sc.nextInt());
-//				sc.nextLine(); // i believe this will remove the enter key
-//			}
-//			if(input.equals("Degree")) {
-//				linkedList.setFirstDegree(sc.nextLine());
-//			}
-//			if(input.equals("yearOfStudy")) {
-//				linkedList.setFirstYearOfStudy(sc.nextInt());
-//				sc.nextLine();
-//			}
-//			if(input.equals("print")) {
-//				linkedList.display();
-//			}
-//			if(input.equals("remove")) {
-//				linkedList.deleteHead();
-//			}
-//			System.out.println("Running, taking input");
-//			input = sc.nextLine();
-//			
-//		}
 		
 		Lab7_Link selected = new Lab7_Link("NULL","NULL","NULL","NULL");
 		while(!input.equals("quit")) {
@@ -61,7 +35,7 @@ public class Lab7_Main {
 			if(input.equals("yearOfStudy")) {
 				selected = linkedList.search("yearOfStudy" , sc.nextLine());
 			}
-			if(input.equals("PrintList")) {
+			if(input.equals("Print List")) {
 				linkedList.display();
 			}
 			if(input.equals("print")) {
@@ -69,6 +43,13 @@ public class Lab7_Main {
 			}
 			if(input.equals("Remove")) {
 				linkedList.deleteSelectedLink(selected);
+			}
+			if(input.equals("New Link")) {
+				String a = sc.nextLine();
+				String b = sc.nextLine();
+				String c = sc.nextLine();
+				String d = sc.nextLine();
+				linkedList.insertHead(a,b,c,d);
 			}
 			//System.out.println("Running, taking input");
 			input = sc.nextLine();

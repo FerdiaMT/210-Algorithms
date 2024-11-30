@@ -3,19 +3,58 @@ package labWorkNumbered;
 public class Lab7_LinkedList {
 
 	private Lab7_Link first; // this is a pointer of current basically
-	
+	private boolean empty = true;
 	public Lab7_LinkedList() {
+		empty=true;
 		first = null;
 	}
 	
 	public boolean isEmpty() {
+
 		return (first==null);
 	}
 	
+//	public void insertHead(String name, String age, String degree, String yearOfStudy) {
+//		Lab7_Link newLink = new Lab7_Link( name,  age,  degree, yearOfStudy);
+//		newLink.next = first;
+//		first = newLink;
+//	}
+	
 	public void insertHead(String name, String age, String degree, String yearOfStudy) {
-		Lab7_Link newLink = new Lab7_Link( name,  age,  degree, yearOfStudy);
-		newLink.next = first;
-		first = newLink;
+		if(isEmpty()) {
+			Lab7_Link newLink = new Lab7_Link( name,  age,  degree, yearOfStudy);
+			first = newLink;
+			empty = false;
+		}else {
+			Lab7_Link newLink = new Lab7_Link( name,  age,  degree, yearOfStudy);
+			
+			Lab7_Link current = first;
+			Lab7_Link previous = first;
+			
+			
+			// we want it to go more forward while the 
+			//insert links name is alphabetically higher then the comparison
+			
+			while(newLink.name.compareTo(current.name) >0 ) {
+				//(newLink.name.charAt(0)-0) > (current.name.charAt(0)-0) 
+				previous = current;
+				current = current.next;
+			}
+			// at this point it has been found
+			
+			if(current == first) {// if data is first one
+				newLink.next=current;
+				first = newLink;
+			}else {
+				   previous.next = newLink;
+				   newLink.next = current;
+			}
+		}
+		
+		
+		/*
+		 * 
+		 */
 	}
 	
 	public Lab7_Link deleteHead() {
@@ -48,10 +87,6 @@ public class Lab7_LinkedList {
 		
 		return current;
 	}
-	
-	
-	
-	
 	
 	public void display() {
 		Lab7_Link current = first;//create a copy of pointer
@@ -146,8 +181,6 @@ public class Lab7_LinkedList {
 	public void deleteSelectedLink(Lab7_Link current) {
 		delete(current.name);
 	}
-	
-	
 	//so the first input is what category we are searching for
 	//, andthe second one is the key we are searching for 
 	// it will then print the linked list with that data
