@@ -51,10 +51,6 @@ public class Lab7_LinkedList {
 			}
 		}
 		
-		
-		/*
-		 * 
-		 */
 	}
 	
 	public Lab7_Link deleteHead() {
