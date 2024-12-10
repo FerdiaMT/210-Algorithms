@@ -6,8 +6,6 @@ public class Lab6_PriorityQueue {
 	private int maxSize;
 	private int nItems;
 
-
-	
 	public Lab6_PriorityQueue(int size) { // constructor
 		maxSize = size;
 		array = new int[maxSize];
@@ -85,10 +83,7 @@ public class Lab6_PriorityQueue {
 		}
 		System.out.println("} \n");
 	
-	}
-	
-
-	  
+	}	  
 }
 
 /*
