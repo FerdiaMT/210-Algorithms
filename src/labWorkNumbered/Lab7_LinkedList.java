@@ -24,7 +24,6 @@ public class Lab7_LinkedList {
 		if(isEmpty()) {
 			Lab7_Link newLink = new Lab7_Link( name,  age,  degree, yearOfStudy);
 			first = newLink;
-			empty = false;
 		}else {
 			Lab7_Link newLink = new Lab7_Link( name,  age,  degree, yearOfStudy);
 			

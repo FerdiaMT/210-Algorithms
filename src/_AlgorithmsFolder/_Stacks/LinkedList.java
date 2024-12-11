@@ -10,6 +10,24 @@ public class LinkedList {
 		first = newLink;
 	}
 	
+	public void insertSorted(int dataIn) {
+		Link newLink = new Link(dataIn);
+		Link current;
+		
+		if(first==null || first.data>= newLink.data) {
+			newLink.next = first;
+			first = newLink;
+		}else {
+			current = first;
+			while(current.next != null &&newLink.data > current.next.data ) {
+				current = current.next;
+			}
+			newLink.next = current.next;
+			current.next = newLink;
+			
+		}
+	}
+	
 	public void display() {
 		Link current = first;
 		while(current != null) {

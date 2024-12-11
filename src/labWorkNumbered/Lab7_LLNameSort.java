@@ -2,7 +2,7 @@ package labWorkNumbered;
 
 import java.util.Scanner;
 
-public class Lab7_Main {
+public class Lab7_LLNameSort {
 	
 	public static void lab7Main() {
 		

@@ -1,6 +1,6 @@
 package labWorkNumbered;
 import java.util.Scanner;
-public class Lab8_Main {
+public class Lab8_BrokenLinkedList {
 
 	public static void main(String[] args) {
 		Lab8_LinkedList ll = new Lab8_LinkedList();
