@@ -21,21 +21,21 @@ public class Y2023_LinkedList {
 	public void insertSorted(String a ,int b) {
 		Y2023_Link newLink = new Y2023_Link(a,b);
 
-		if(isEmpty()) {
-			newLink = first;
+		Y2023_Link current;
+		
+		if(first==null ||first.score>newLink.score) {
+			newLink.next = first;
+			first = newLink;
 		}else {
-			
-			Y2023_Link current = first;
-			Y2023_Link previous = first;
-			
-			while(newLink.score > current.score && current.next!=null) {
-				previous = current;
+			current = first;
+			while(current.next != null && newLink.score > current.next.score) {
 				current = current.next;
 			}
-			previous.next = newLink;
-			newLink.next = current;
-			//so this value goes between the 2
+			//once it breaks,, its because newLink is bigger than current but smaller then current.next
+			newLink.next = current.next;
+			current.next = newLink;
 		}
+		
 		
 		
 	}
