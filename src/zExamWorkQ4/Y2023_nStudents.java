@@ -6,12 +6,12 @@ public class Y2023_nStudents {
 		
 		Y2023_LinkedList ll = new Y2023_LinkedList();
 		
-		ll.insertSorted("John O’Brien",42);
+		ll.insertSorted("Kohn O’Brien",42);
 		ll.insertSorted("Emily Smith" ,59);
-		ll.insertSorted("Kate Murphy" ,42);
+		ll.insertSorted("Jate Murphy" ,42);
 		
-		System.out.println(ll.delete());
-		System.out.println(ll.delete());
-		System.out.println(ll.delete());
+		ll.delete();
+		ll.delete();
+		ll.delete();
 	}
 }
