@@ -6,9 +6,11 @@ public class Y2023_Monte_Carlo_Dice {
 		//System.out.println(random.nextInt(3)); // remember the int in here is the limit, so the value cant be 3
 		int limit = 10;
 		int allRolls = 0;
-		for(int i = 0; i <limit; i++) {
-			allRolls += rollAllDie();
-		}
+//		for(int i = 0; i <limit; i++) {
+//			allRolls += rollAllDie();
+//		}
+		
+		System.out.println(rollAllDie());
 		
 		System.out.println(allRolls / limit);
 		System.out.println("A");

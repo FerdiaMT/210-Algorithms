@@ -1,12 +1,9 @@
-package labWorkNumbered;
+package _AlgorithmsFolder.scrapWork;
 
-import java.util.Scanner;
-
-public class Lab9_MergeSort{
-	
-public static void main(String args[]) {
+public class Scrap2 {
+	public static void main(String args[]) {
 		
-		int[] arr = takeInput();
+		int[] arr = {2,44,6,77,8,9,100};
 		
 		mergeSort(arr);
 		
@@ -71,22 +68,5 @@ public static void main(String args[]) {
 		}
 		
 		
-	}
-	
-	public static int[] takeInput() {
-		
-		Scanner sc = new Scanner(System.in);
-		
-		System.out.println("give length");
-		int x = sc.nextInt();
-		sc.nextLine();
-		int arr[] = new int[x];
-		System.out.println("give nums");
-		for(int i =0; i < x; i++) {
-			arr[i] = sc.nextInt();
-			sc.nextLine();
-		}
-		
-		return arr;
 	}
 }
