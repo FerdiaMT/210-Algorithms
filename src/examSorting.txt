@@ -1,0 +1,54 @@
+sorting algorithms best case, average case and worst case
+
+-----------------------------------------------
+	name       |  Best  |  Average  |  Worst  |
+-----------------------------------------------
+bubble sort    |  O(n)  |   O(n^2)  |  O(n^2) |
+insertion sort |  O(n)  |   O(n^2)  |  O(n^2) |
+selection sort |  O(n^2)|   O(n^2)  |  O(n^2) |
+stack add      |  O(1)  |   O(1)    |  O(1)   |
+queue add   v  |  O(1)  |   O(1)    |  O(n)   |
+priority queue |  O(1)  |   O(logn) |  O(logn)|
+linkedList add |  O(1)  |   O(n)    |  O(n)   |
+linkedlist srch|  O(1)  |   O(n)    |  O(n)   |
+mergesort      |O(nlogn)|   O(nlogn)| O(nlogn)|
+quicksort      |O(nlogn)|   O(nlogn)|  O(n^2) |
+-----------------------------------------------
+linear search  |
+binary search  |
+----------------------------------------------- <- these 2 are mentioned in the notes, just for big O though and not in previous years
+exams tend to want the average or average/worst
+
+
+
+==================================================================================================================================
+
+								how to find the mathematical big O:
+
+==================================================================================================================================
+Show that f(n) = 5n + 3 = O(n)
+• Find a g(n), c and n0 such that f(n) ≤ c.g(n) for all n ≥ n0
+• How about g(n) = n, c = 8, n0 = 1?
+• f(n) <= 8n for every value of n greater than 1
+• 5n + 3 is always less than 5n + 3n when n is at least 1
+• Therefore, we can say f(n) is O(n)
+
+^ these are powerpoint notes, heres my rewrite :
+
+c * g(n) = f(n)
+c - some constant
+g(n) = the n multiple eg :n^2
+n0, where the index starts, (for all n ≥ n0)
+
+so if we had 5n+3 , we need to find a c* g(n) for all n0 thats bigger or equal
+so in this case we will do c = 8, g(n) = n , and n0 = 1
+5n+3 <= 8n where n is greater or equal to 1 - true
+n=1 , 8 <= 8 , true
+n=2 , 8 <= 16, true
+and it can continue 
+
+==================================================================================================================================
+
+								
+
+==================================================================================================================================
