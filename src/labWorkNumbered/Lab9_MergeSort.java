@@ -1,20 +1,33 @@
 package labWorkNumbered;
 
 import java.util.Scanner;
+import java.util.Random;
 
 public class Lab9_MergeSort{
 	
 public static void main(String args[]) {
 		
-		int[] arr = takeInput();
+		//int[] arr = takeInput();
 		
-		mergeSort(arr);
+		int[] randArr = new int[10];
 		
-		for(int i = 0; i < arr.length; i++) {
-			System.out.println(arr[i]);
+		fillArr(randArr);
+	
+		
+		
+		mergeSort(randArr);
+		
+//		for(int i = 0; i < arr.length; i++) {
+//			System.out.println(arr[i]);
+//		}
+		
+		for (int i = 0; i < randArr.length; i++) {
+			System.out.println(randArr[i]);
 		}
 	}
 	
+
+
 	public static void mergeSort(int arr[]) {
 		//recursive ,so base case is needed
 		int length = arr.length;
@@ -33,9 +46,17 @@ public static void main(String args[]) {
 				rightArr[i-middle] = arr[i];
 			}
 		}
+		if(length>9) {
+			mergeSort(leftArr);
+			mergeSort(rightArr);
+		}else {
+			insertionSort(leftArr);
+			insertionSort(rightArr);
+		}
+
 		
-		mergeSort(leftArr);
-		mergeSort(rightArr);
+		
+		
 		merge(leftArr,rightArr,arr);
 	}
 	
@@ -89,4 +110,30 @@ public static void main(String args[]) {
 		
 		return arr;
 	}
+	
+	private static void fillArr(int[] randArr) {
+		
+		Random rand = new Random();
+		for (int i = 0; i < randArr.length; i++) {
+			randArr[i] = rand.nextInt(0,1000);
+		}
+	}
+	
+	private static void insertionSort(int[] arr) {
+		// TODO TODO TODO i forget how TODO this one
+		// {6,22,8,1,33,90,8}
+		
+		// [22], j=0,arr[j]=6 while(j>-1) and arr[j]>key
+		
+		for(int i = 1; i < arr.length; i++) {
+			int key = arr[i];
+			int j = i-1;
+			while((j>-1) && (arr[j]>key)) {
+				arr[j+1] =arr[j];
+				j--;
+			}
+			arr[j+1] = key;
+		}
+	}
+	
 }
