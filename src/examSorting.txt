@@ -7,8 +7,8 @@ bubble sort    |  O(n)  |   O(n^2)  |  O(n^2) |
 insertion sort |  O(n)  |   O(n^2)  |  O(n^2) |
 selection sort |  O(n^2)|   O(n^2)  |  O(n^2) |
 stack add      |  O(1)  |   O(1)    |  O(1)   |
-queue add   v  |  O(1)  |   O(1)    |  O(n)   |
-priority queue |  O(1)  |   O(logn) |  O(logn)|
+queue add      |  O(1)  |   O(1)    |  O(n)   |
+prtyQueue add  |  O(1)  |   O(logn) |  O(logn)|
 linkedList add |  O(1)  |   O(n)    |  O(n)   |
 linkedlist srch|  O(1)  |   O(n)    |  O(n)   |
 mergesort      |O(nlogn)|   O(nlogn)| O(nlogn)|
