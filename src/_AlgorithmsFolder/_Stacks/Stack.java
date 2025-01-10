@@ -1,4 +1,4 @@
-package _AlgorithmsFolder._Stacks;
+  package _AlgorithmsFolder._Stacks;
 
 public class Stack {
 
