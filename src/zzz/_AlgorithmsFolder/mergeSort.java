@@ -1,4 +1,4 @@
-package _AlgorithmsFolder;
+package zzz._AlgorithmsFolder;
 
 import java.util.Arrays;
 

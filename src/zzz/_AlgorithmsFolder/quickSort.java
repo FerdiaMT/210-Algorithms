@@ -1,4 +1,4 @@
-package _AlgorithmsFolder;
+package zzz._AlgorithmsFolder;
 
 public class quickSort {
 	

@@ -1,4 +1,4 @@
-package _AlgorithmsFolder._Stacks;
+package zzz._AlgorithmsFolder._Stacks;
 
 public class Link {
 	public int data;
